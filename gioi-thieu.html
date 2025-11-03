@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu</title>
+    <style>
+        /* ----- Tổng thể ----- */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* ----- Menu chính ----- */
+        nav {
+            background-color: #ff8533;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 12px 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            background-color: #e65c00;
+        }
+
+        /* ----- Menu con (dropdown) ----- */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ff8533;
+            min-width: 180px;
+            border-radius: 0 0 8px 8px;
+            z-index: 1000;
+        }
+
+        nav ul li ul li {
+            width: 100%;
+        }
+
+        nav ul li:hover > ul {
+            display: block; /* Hiện menu con khi hover */
+        }
+
+        nav ul li ul li a {
+            padding: 10px 15px;
+            color: white;
+            text-align: left;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #e65c00;
+        }
+
+        /* ----- Khu vực chính ----- */
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fffaf5;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        main h2 {
+            color: #ff6600;
+            border-bottom: 2px solid #ff6600;
+            padding-bottom: 5px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        /* ----- Bảng ----- */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #ff6600;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffe6cc;
+        }
+
+        tr:hover {
+            background-color: #fff0e6;
+        }
+
+        /* ----- Footer ----- */
+        footer {
+            text-align: center;
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trang Giới Thiệu</h1>
+         <img src="./dnu.png" style="width: 200px height: 50px" alt="">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="trangchu.html">Trang chủ</a></li>
+            <li>
+                <a href="gioi-thieu.html">Giới thiệu ▾</a>
+            </li>
+            <li><a href="tin-tuc.html">Tin tức</a></li>
+            <li><a href="lien-he.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Giới thiệu chung</h2>
+        <p>
+            Trường chúng tôi được thành lập với mục tiêu trở thành trung tâm đào tạo, nghiên cứu và sáng tạo hàng đầu.
+            Với đội ngũ giảng viên có trình độ cao và hệ thống cơ sở vật chất hiện đại, chúng tôi luôn hướng đến việc cung cấp
+            môi trường học tập năng động và thân thiện.
+        </p>
+
+        <h3>Giá trị cốt lõi</h3>
+        <ul>
+            <li>Chất lượng – Uy tín – Hiệu quả</li>
+            <li>Sáng tạo trong giảng dạy và học tập</li>
+            <li>Hợp tác và phát triển bền vững</li>
+        </ul>
+
+        <h3>Thông tin tổng quan</h3>
+        <table>
+            <tr>
+                <th>Năm học</th>
+                <th>số lượng tuyển sinh</th>
+                <th>các ngành nổi bật</th>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td> 7030 chỉ tiêu</td>
+                <td>24 ngành</td>
+            </tr>
+            <tr>
+                <td>2024</td>
+                <td>7600</td>
+                <td>36 ngành</td>
+            </tr>
+            <tr>
+                <td>2025</td>
+                <td>khoảng 9.500 – 9.600</td>
+                <td>42-43 ngành</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        &copy; 2025 - Trang Giới thiệu (HTML5 & CSS)
+    </footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liên hệ</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+header {
+    background: orange;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+nav ul {
+    list-style: none;
+    background: #ff9900;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    position: relative;
+}
+nav ul li a {
+    display: block;
+    padding: 8px 15px;
+    color: white;
+    text-decoration: none;
+}
+nav ul li:hover {
+    background: #e67300;
+}
+/* menu con */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background: #ff9900;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+}
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li ul li a {
+    padding: 8px 12px;
+}
+main {
+    padding: 20px;
+}
+form {
+    max-width: 400px;
+    margin: auto;
+}
+label, input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+input, textarea {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>Liên hệ</h1>
+    <img src="./dnu.png" alt="">
+</header>
+
+<nav>
+    <ul>
+        <li><a href="trangchu.html">Trang chủ</a></li>
+        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+        <li><a href="tin-tuc.html">Tin tức</a></li>
+        <li><a href="lien-he.html">Liên hệ</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Form liên hệ</h2>
+    <form>
+        <label>Họ và tên:</label>
+        <input type="text" required>
+
+        <label>Email:</label>
+        <input type="email" required>
+
+        <label>Chủ đề:</label>
+        <input type="text">
+
+        <label>Nội dung:</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Gửi</button>
+    </form>
+</main>
+
+<footer>
+    <p>© 2025 Đại học Đại Nam</p>
+</footer>
+</body>
+</html>
+

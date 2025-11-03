@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức | Đại học Đại Nam</title>
+    <style>
+        /* --- RESET CSS --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- HEADER --- */
+        header {
+            background-color: #ff6600;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+        /* --- MENU --- */
+        nav {
+            background-color: #ff8533;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 12px 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+
+        nav ul li:hover {
+            background-color: #e65c00;
+        }
+
+        /* --- MENU CON (dropdown) --- */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #ff8533;
+            min-width: 180px;
+            top: 100%;
+            left: 0;
+            flex-direction: column;
+            z-index: 100;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            padding: 10px 15px;
+        }
+
+        nav ul li ul li:hover {
+            background-color: #e65c00;
+        }
+
+        /* --- MAIN (TIN TỨC) --- */
+        main {
+            padding: 30px 10%;
+        }
+
+        h2 {
+            color: #ff6600;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 26px;
+        }
+
+        .news-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .news-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .news-card .content {
+            padding: 15px;
+        }
+
+        .news-card h3 {
+            color: #ff6600;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .news-card p {
+            font-size: 15px;
+            color: #555;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tin tức Đại học Đại Nam</h1>
+        <img src="./dnu.png" alt="">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="trangchu.html">Trang chủ</a></li>
+            <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+           
+         
+            <li><a href="tin-tuc.html">Tin tức</a></li>
+            <li><a href="lien-he.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Tin tức mới nhất</h2>
+        <div class="news-container">
+            <div class="news-card">
+                <img src="./cháy.jpg" alt="Tin 1">
+                <div class="content">
+                    <h3>trường bị đánh bom bởi mấy anh ả rập</h3>
+                    <p>Trường Đại học Đại Nam  xin được phép thông báo tới toàn thể cán bộ gv và hs về vụ việc trường bị đánh bom và đồng thời thông báo toàn bộ cán bộ nhân viên và học sinh nhà trường nghỉ 3 tháng 6 ngày</p>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <img src="dép.jpg" alt="Tin 2">
+                <div class="content">
+                    <h3>nhà trường đền bù tổn thất tinh thần cho toàn thể nạn nhân chịu ảnh hường của vụ đánh bom</h3>
+                    <p>trường đại học đại nam chính thức đưa ra thông báo bồi thường cho các nạn nhân của vụ đánh bom. mỗi người sẽ được bồi thường 18k và 36 đôi dép </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Đại học Đại Nam - Bản quyền thuộc về DNU</p>
+    </footer>
+</body>
+</html>

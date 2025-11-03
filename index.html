@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fffaf5;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff6f00;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #ff8f00;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      background-color: #ff6f00;
+    }
+
+    /* Menu con */
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 48px;
+      left: 0;
+      background-color: #ff8f00;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      min-width: 180px;
+      border-radius: 0 0 4px 4px;
+    }
+
+    nav ul li:hover > ul {
+      display: block;
+    }
+
+    nav ul li ul li a {
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    nav ul li ul li a:hover {
+      background-color: #ff6f00;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #ff6f00;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+    .img{
+        padding-left: 150px ;
+        padding-right: 150px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Khoa Công Nghệ Thông Tin</h1>
+    
+    <img src="./dnu.png" style="width: 200px height: 50px" alt="">
+    <p>web site này chỉ để làm bài ko còn mục đích j khác</p><br>
+    <p> ok  thầy</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="trangchu.html">Trang chủ</a></li>
+      <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+     
+      <li><a href="tin-tuc.html">Tin tức</a></li>
+      <li><a href="lien-he.html">Liên hệ</a></li>
+    </ul>
+  </nav>
+   <img src="./kk.jpg" style="width: 120px, height: 100px;" alt="">
+
+ 
+  <footer>
+    <p>© 2025 Trường Đại học Đại Nam. tạch thì thi lại.</p>
+  </footer>
+</body>
+</html>
